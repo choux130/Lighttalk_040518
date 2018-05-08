@@ -1,0 +1,13 @@
+HTTrack3.49-2 launched on Wed, 04 Apr 2018 23:03:50 at http://r4ds.had.co.nz/
+(winhttrack http://r4ds.had.co.nz/ -W -O "/Users/chou/websites/rstudio_book" -%v )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+23:24:23	Warning: 	Retry after error -2 (Receive Time Out) at link r4ds.had.co.nz/communicate-plots_files/figure-html/unnamed-chunk-19-1.png (from r4ds.had.co.nz/graphics-for-communication.html)
+23:24:23	Error: 	"Not Found" (404) at link r4ds.had.co.nz/diamond-prices (from r4ds.had.co.nz/graphics-for-communication.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 20 minutes 35 seconds : 324 links scanned, 321 files written (23397579 bytes overall) [23507294 bytes received at 19034 bytes/sec]
+(1 errors, 1 warnings, 0 messages)

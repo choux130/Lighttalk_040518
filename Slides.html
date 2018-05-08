@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A demonstration of RShiny</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="generator" content="pandoc" />
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <base target="_blank">
+
+  <script type="text/javascript">
+    var SLIDE_CONFIG = {
+      // Slide settings
+      settings: {
+                title: 'A demonstration of RShiny',
+                        useBuilds: true,
+        usePrettify: true,
+        enableSlideAreas: true,
+        enableTouch: true,
+                      },
+
+      // Author information
+      presenters: [
+            {
+        name:  'Yin-Ting Chou' ,
+        company: '',
+        gplus: '',
+        twitter: '',
+        www: '',
+        github: ''
+      },
+            ]
+    };
+  </script>
+
+  <link href="Slides_files/ioslides-13.5.1/fonts/fonts.css" rel="stylesheet" />
+  <link href="Slides_files/ioslides-13.5.1/theme/css/default.css" rel="stylesheet" />
+  <link href="Slides_files/ioslides-13.5.1/theme/css/phone.css" rel="stylesheet" />
+  <script src="Slides_files/ioslides-13.5.1/js/modernizr.custom.45394.js"></script>
+  <script src="Slides_files/ioslides-13.5.1/js/prettify/prettify.js"></script>
+  <script src="Slides_files/ioslides-13.5.1/js/prettify/lang-r.js"></script>
+  <script src="Slides_files/ioslides-13.5.1/js/prettify/lang-yaml.js"></script>
+  <script src="Slides_files/ioslides-13.5.1/js/hammer.js"></script>
+  <script src="Slides_files/ioslides-13.5.1/js/slide-controller.js"></script>
+  <script src="Slides_files/ioslides-13.5.1/js/slide-deck.js"></script>
+
+  <style type="text/css">
+
+    b, strong {
+      font-weight: bold;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    slides > slide {
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .auto-fadein {
+      -webkit-transition: opacity 0.6s ease-in;
+      -webkit-transition-delay: 0.4s;
+      -moz-transition: opacity 0.6s ease-in 0.4s;
+      -o-transition: opacity 0.6s ease-in 0.4s;
+      transition: opacity 0.6s ease-in 0.4s;
+      opacity: 0;
+    }
+
+  </style>
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+        <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+            <p style="margin-top: 6px; margin-left: -2px;">4/4/2018</p>
+          </hgroup>
+  </slide>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('slides').prepend("<div class=\"zoomDiv\"><img src=\"\" class=\"zoomImg\"></div>");
+    // onClick function for all plots (img's)
+    $('img:not(.zoomImg)').click(function() {
+      $('.zoomImg').attr('src', $(this).attr('src'));
+      $('.zoomDiv').css({opacity: '1', width: '80%'});
+    });
+    // onClick function for zoomImg
+    $('img.zoomImg').click(function() {
+      $('.zoomDiv').css({opacity: '0', width: '0%'});
+    });
+  });
+</script>
+
+<slide class=""><hgroup><h2>R VS. RStudio</h2></hgroup><article  id="r-vs.-rstudio" class="smaller ">
+
+<table class = 'rmdtable'>
+<tr class="header">
+<th align="center">R</th>
+<th align="center">RStudio</th>
+</tr>
+<tr class="odd">
+<td align="center"><img src="image/r_1.png" style="width: 450px;"/></td>
+<td align="center"><img src="image/rstudio.png" style="width: 450px;"/></td>
+</tr>
+</table>
+
+</article></slide><slide class=""><hgroup><h2>Hadley Wickham (Chief Scientist at RStudio)</h2></hgroup><article  id="hadley-wickham-chief-scientist-at-rstudio" class="smaller ">
+
+<br />
+
+<blockquote>
+
+“The analyses that get me excited are not Google crunching a terabyte of web ad data in order to optimize revenue… [but rather] <br /> the biologists who are absolutely passionate about this one swampfly and now they can use R and they can understand it.“
+
+</blockquote>
+
+</article></slide><slide class=""><hgroup><h2>Packages</h2></hgroup><article  id="packages" class="smaller ">
+
+<center>
+
+<img src="image/packages.jpg" style="width: 50%;"/>
+
+</center>
+
+</article></slide><slide class=""><hgroup><h2>R Markdwon &#8211; Markdown</h2></hgroup><article  id="r-markdwon----markdown" class="smaller ">
+
+<center>
+
+<img src="image/rmarkdown.png" style="width: 1000px;"/>
+
+</center>
+
+</article></slide><slide class=""><hgroup><h2>R Sweave &#8211; LaTex</h2></hgroup><article  id="r-sweave----latex" class="smaller ">
+
+<center>
+
+<img src="image/rsweave.png" style="width: 900px;"/>
+
+</center>
+
+</article></slide><slide class=""><hgroup><h2>Instruction &#8211; Beautiful Cheatsheet</h2></hgroup><article  id="instruction----beautiful-cheatsheet" class="smaller ">
+
+<iframe src="resources/cheatsheet.html" frameborder="0" scrolling="yes" style="height:500px;width:1000px;">
+
+</iframe>
+
+</article></slide><slide class=""><hgroup><h2>Instruction &#8211; Source Code</h2></hgroup><article  id="instruction----source-code" class="smaller ">
+
+<center>
+
+<img src="image/rstudio_github.png" style="width: 1000px;"/>
+
+</center>
+
+</article></slide><slide class=""><hgroup><h2>Instruction &#8211; Free Books</h2></hgroup><article  id="instruction----free-books" class="smaller ">
+
+<iframe src="resources/book/index.html" frameborder="0" scrolling="yes" style="height:500px;width:1000px;">
+
+</iframe></article></slide>
+
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!-- map slide visiblity events into shiny -->
+<script>
+  (function() {
+    if (window.jQuery) {
+       window.jQuery(document).on('slideleave', function(e) {
+         window.jQuery(e.target).trigger('hidden');
+      });
+       window.jQuery(document).on('slideenter', function(e) {
+         window.jQuery(e.target).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>
